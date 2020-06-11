@@ -2,32 +2,37 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
     <title>@ViewData["Title"] - Cliff Andersen</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
-<body>
+<body style="background: #2b2b2b">
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">aaaaaaa</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
-                    </ul>
+        <div class="container" style="max-height:275px; max-width:1920px; position:relative">
+            <img src="~/images/image_placeholder.jpg" class="img-fluid" alt="Image text here" style="z-index:1; position:absolute">
+            <img src="~/images/pfp_placeholder.png" class="img-fluid" alt="Image text here" style="z-index:2; position:absolute; right:300px; top:145px">
+            <h1 style="z-index:3; position:absolute; color: #ffffff; font-weight:bold; font-size:larger; right:550px; top:235px">Cliff Andersen</h1> <!-- Need percentage for margins instead of pixels -->
+        </div>
+        <div class="container" style="position:absolute; top:275px">
+            <div class="row">
+                <div class="col-5">
+                    <div class="nav flex-column nav-pills nav-justified" id="v-pills-tab" role="tablist" aria-orientation="vertical" style="background: #1e1e1e; font-size:35px; font-weight:bold; text-align:center">
+                        <a class="nav-link active" id="v-pills-om_mig-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" style="height:130px; color: #ffffff" aria-selected="true">Om mig</a>
+                        <a class="nav-link" id="v-pills-projekter-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" style="height:130px; color: #ffffff" aria-selected="false">Projekter</a>
+                        <a class="nav-link" id="v-pills-fritid-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" style="height:130px; color: #ffffff" aria-selected="false">Fritid</a>
+                    </div>
+                </div>
+                <!-- Need to make these open new Pages -->
+                <div class="col-3">
+                    <div class="tab-content" id="v-pills-tabContent" style="color: #ffffff">
+                        <div class="tab-pane fade show active" id="v-pills-om_mig" role="tabpanel" aria-labelledby="v-pills-om_mig-tab">om miggggg</div>
+                        <div class="tab-pane fade" id="v-pills-projekter" role="tabpanel" aria-labelledby="v-pills-projekter-tab">projekterrrrr</div>
+                        <div class="tab-pane fade" id="v-pills-fritid" role="tabpanel" aria-labelledby="v-pills-fritid-tab">fritidddd</div>
+                    </div>
                 </div>
             </div>
-        </nav>
+        </div>
     </header>
     <div class="container">
         <main role="main" class="pb-3">
