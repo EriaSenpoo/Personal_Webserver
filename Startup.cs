@@ -8,6 +8,7 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using Personal_Website.Services;
 
 namespace Personal_Website
 {
@@ -24,6 +25,7 @@ namespace Personal_Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddTransient<Data_Info_Service>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
