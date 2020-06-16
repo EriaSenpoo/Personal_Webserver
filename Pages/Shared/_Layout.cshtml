@@ -8,28 +8,34 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body style="background: #2b2b2b">
-    <header>
-        <div class="container" style="max-height:275px; max-width:1920px; position:relative; padding-left:0px; padding-right:0px">
+    <header style="overflow:auto">
+        <div class="container" style="max-height:275px; max-width:1920px; position:absolute; padding-left:0px; padding-right:0px">
             <img src="~/images/image_placeholder.jpg" class="img-fluid" alt="Image text here" style="z-index:1; position:absolute">
-            <img src="~/images/pfp_placeholder.png" class="img-fluid" alt="Image text here" style="z-index:2; position:absolute; right:300px; top:145px">
-            <h1 style="z-index:3; position:absolute; color: #ffffff; font-weight:bold; font-size:larger; right:550px; top:235px">Cliff Andersen</h1> <!-- Need percentage for margins instead of pixels -->
+            <img src="~/images/pfp_placeholder.png" class="img-fluid" alt="Image text here" style="z-index:2; position:absolute; right:15%; margin-top:7.5%">
+            <h1 style="z-index:3; position:absolute; color: #ffffff; font-weight:bold; font-size:larger; right: 29%; margin-top: 12%">Cliff Andersen</h1>
         </div>
-        <div class="container" style="position:absolute; top:275px; padding-left:0px; padding-right:0px">
+        <div class="container" style="position:absolute; top: 29.5%; padding-left:0px; padding-right:0px">
             <div class="row">
                 <div class="col-5">
-                    <ul class="nav flex-column nav-pills nav-justified" id="buttons" style="background: #1e1e1e; font-size:35px; font-weight:bold; text-align:center">
+                    <ul class="nav flex-column nav-pills nav-justified" id="buttons" style="background: #1e1e1e; font-weight:bold; text-align:center">
                         <li>
-                            <a class="nav-link active" id="button_om_mig" role="button" style="height:130px; color: #ffffff" onclick="" asp-area="" asp-page="Index">Om mig</a>
+                            <a class="nav-link layout_buttons" id="button_om_mig" role="button" asp-area="" asp-page="/Om_mig/Index">Om mig</a>
                         </li>
                         <li>
-                            <a class="nav-link" id="button_projekter" role="button" style="height:130px; color: #ffffff"  asp-area="" asp-page="/Projekter/Index">Projekter</a>
+                            <a class="nav-link layout_buttons" id="button_projekter" role="button" asp-area="" asp-page="/Projekter/Index">Projekter</a>
                         </li>
                         <li>
-                            <a class="nav-link" id="button_fritid" role="button" style="height:130px; color: #ffffff" asp-area="" asp-page="/Fritid/Index">Fritid</a>
+                            <a class="nav-link layout_buttons" id="button_fritid" role="button" asp-area="" asp-page="/Fritid/Index">Fritid</a>
+                        </li>
+                        <li>
+                            <a class="nav-link layout_buttons" id="button_fritid" role="button" asp-area="" asp-page="/Kontakt/Index">Kontakt</a>
                         </li>
                     </ul>
                 </div>
             </div>
+        </div>
+        <div class="footer footer_stuff">
+            <h5 style="font-size: 75%;">E-mail: insert_email_here</h5>
         </div>
     </header>
     <div class="container">

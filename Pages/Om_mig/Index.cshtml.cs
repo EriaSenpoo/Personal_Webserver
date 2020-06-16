@@ -6,13 +6,13 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
 
-namespace Personal_Website.Pages
+namespace Personal_Website.Pages.Om_mig
 {
     public class IndexModel : PageModel
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public string Om_mig_title { get; private set; }
+        public string Index_title { get; private set; }
         public string Om_mig_text { get; private set; }
 
         public IndexModel(ILogger<IndexModel> logger)
@@ -22,8 +22,9 @@ namespace Personal_Website.Pages
 
         public void OnGet()
         {
-            Om_mig_title = "Om mig";
+            Index_title = "Om mig";
             Om_mig_text = "insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here ";
+
         }
     }
 }

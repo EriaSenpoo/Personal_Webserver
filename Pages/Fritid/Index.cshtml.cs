@@ -17,16 +17,16 @@ namespace Personal_Website.Pages.Fritid
         public Data_Info_Service data_info;
         // They called ```public IEnumerable<Product> Products;```
 
+        public string Fritid_text { get; set; }
+
         public IndexModel(ILogger<IndexModel> logger, Data_Info_Service data_info)
         {
             _logger = logger;
             this.data_info = data_info;
         }
-
-        public string aaa { get; set; }
         public void OnGet()
         {
-            aaa = "aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa";
+            Fritid_text = "insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here ";
         }
     }
 }

@@ -9,6 +9,6 @@ namespace Personal_Website.Models
     public class Root_Data
     {
         [JsonProperty("the_data")]
-        public The_Data The_data_class { get; set; }
+        public string The_data_class { get; set; }
     }
 }

@@ -9,9 +9,10 @@ namespace Personal_Website.Pages.Projekter
 {
     public class IndexModel : PageModel
     {
+        public string Projekter_text { get; private set; }
         public void OnGet()
         {
-
+            Projekter_text = "insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here ";
         }
     }
 }
