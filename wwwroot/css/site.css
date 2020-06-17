@@ -79,15 +79,15 @@ body {
 .data_position_title{
     color: #fff;
     position: absolute;
-    margin-top: 16%;
-    margin-left: 5%
+    margin-top: 19%;
+    margin-left: 27%
 }
 
 .data_position {
     color: #fff;
     position: absolute;
-    margin-top: 21%;
-    margin-left: 5%;
+    margin-top: 24%;
+    margin-left: 27%;
     margin-right: 3%;
 }
 
@@ -110,4 +110,26 @@ body {
     padding-left: 55.5em;
     height: 3.5%;
     padding-top: 0.4%;
+}
+
+.banner_position{
+    position: absolute;
+    min-width: 1920px;
+    min-height: 275px;
+}
+
+.sub_buttons_specs {
+    position: absolute;
+    margin-top: 16%;
+    margin-left: 27%;
+    color: #b00000;
+    border-color: #b00000;
+}
+
+.sub_buttons_ind{
+
+}
+
+.sub_buttons_ind:hover {
+    background-color: #1e1e1e;
 }

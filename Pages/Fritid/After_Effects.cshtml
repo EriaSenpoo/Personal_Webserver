@@ -1,0 +1,18 @@
+﻿@page
+@model Personal_Website.Pages.Fritid.After_EffectsModel
+@{
+    ViewData["Title"] = "After_Effects";
+}
+
+<img class="banner_position" src='@ViewData["Banner"]' alt="ViewData[Banner] " />
+
+<div class="sub_buttons_specs">
+    <a type="button" class="btn btn-outline-success sub_buttons_ind" style="color: #7d7d7d; border-color: #7d7d7d;" asp-area="" asp-page="/Fritid/Index">Return</a>
+</div>
+
+<div class="data_position_title">
+    <h1>After Effects</h1>
+</div>
+<div class="data_position">
+    <h5>@Model.After_Effects_text</h5>
+</div>

@@ -1,9 +1,19 @@
 {
-  "om_mig_info":[
-    {
-      "introduktion:": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-      "et_eller_andet": "bbbbbbbbbbbbbbbbbbbbb",
-      "et_eller_andet_tredje": "ccccccccccccccccccccccc"
-    }
-  ]
+  "om_mig_info": {
+    "introduktion:": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+    "et_eller_andet": "bbbbbbbbbbbbbbbbbbbbb",
+    "et_eller_andet_tredje": "ccccccccccccccccccccccc"
+  },
+  "projekter": {
+    "introduktion": "aaaaaaaaaaaaa",
+    "et_eller_andet": "bbbbbbbbbbb"
+  },
+  "fritid": {
+    // + undergrupper
+    "introduktion": "aaaaaaaaaaa",
+    "et_eller_andet": "bbbbbbbb"
+  },
+  "kontakt": {
+    "introduktion": "aaaaaaaaaaaaa"
+  }
 }
