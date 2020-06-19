@@ -1,19 +1,18 @@
 {
   "om_mig_info": {
-    "introduktion:": "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
-    "et_eller_andet": "bbbbbbbbbbbbbbbbbbbbb",
-    "et_eller_andet_tredje": "ccccccccccccccccccccccc"
+    "introduktion": "a0",
+    "et_eller_andet": "b0",
+    "et_eller_andet_tredje": "c0"
   },
   "projekter": {
-    "introduktion": "aaaaaaaaaaaaa",
-    "et_eller_andet": "bbbbbbbbbbb"
+    "introduktion1": "a1",
+    "et_eller_andet1": "b1"
   },
   "fritid": {
-    // + undergrupper
-    "introduktion": "aaaaaaaaaaa",
-    "et_eller_andet": "bbbbbbbb"
+    "introduktion2": "a2",
+    "et_eller_andet2": "b2"
   },
   "kontakt": {
-    "introduktion": "aaaaaaaaaaaaa"
+    "introduktion3": "a3"
   }
 }

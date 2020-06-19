@@ -19,7 +19,8 @@ namespace Personal_Website.Models
 
         public override string ToString()
         {
-            return string.Format("{0}", "{1}", "{2}", Introduktion, Et_eller_andet, Et_eller_andet_tredje);
+            //return string.Format("{0}", "{1}", "{2}", Introduktion, Et_eller_andet, Et_eller_andet_tredje) + " aaaaaaaaa";
+            return $"{Introduktion}, {Et_eller_andet}, {Et_eller_andet_tredje}";
         }
     }
 }

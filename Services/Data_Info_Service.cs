@@ -26,38 +26,24 @@ namespace Personal_Website.Services
             get { return Path.Combine(web_host_environment.WebRootPath, "data", "json_data.json"); }
         }
 
-        //public IEnumerable<Root_Data> get_data()
+        //public List<string> get_data_om_mig_info_subjects()
         //{
-        //    using (StreamReader json_file_reader = File.OpenText(json_file_name))
-        //    {
-        //        return JsonSerializer.Deserialize<Root_Data>(json_file_reader.ReadToEnd());
-        //        //aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
-        //    }
+        //    StreamReader reader = File.OpenText(json_file_name);
+        //    JToken data = JToken.Parse(reader.ReadToEnd());
+        //    JObject om_mig_info = data["om_mig_info"].Value<JObject>();
+        //    List<string> subjects = om_mig_info.Properties().Select(property => property.Name).ToList();
+        //    return subjects;
         //}
+        public Tuple<List<string>, List<JToken>> get_data_om_mig_info_data()
+        {
+            StreamReader reader = File.OpenText(json_file_name);
+            JToken data = JToken.Parse(reader.ReadToEnd());
+            JObject om_mig_info = data["om_mig_info"].Value<JObject>();
+            List<string> subjects = om_mig_info.Properties().Select(property => property.Name).ToList();
+            List<JToken> text = om_mig_info.Properties().Select(property => property.Value).ToList();
 
-
-        // ^-------------- THIS
-
-
-
-
-
-
-
-
-
-
-        // Own stuff from here
-
-        //public void parse_json_normally()
-        //{
-        //    JObject obj = JObject.Parse(File.ReadAllText("C:/Users/EriaS/source/repos/Personal_Website/Personal_Website/json_data.json"));
-
-        //    string data_path = $@"C:\Users\EriaS\source\repos\Personal_Website\Personal_Website\json_data.json";
-
-        //    TextReader reader = new StreamReader(data_path);
-        //    string read_json = reader.ReadToEnd();
-        //    Root_Data root = JsonConvert.DeserializeObject<Root_Data>(read_json);
-        //}
+            Tuple<List<string>, List<JToken>> om_mig_data = new Tuple<List<string>, List<JToken>>(subjects, text);
+            return om_mig_data;
+        }
     }
 }

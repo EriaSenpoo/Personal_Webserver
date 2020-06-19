@@ -7,6 +7,10 @@
 <div class="data_position_title">
     <h1>@Model.Index_title</h1>
 </div>
+
 <div class="data_position">
-    <h5>@Model.Om_mig_text</h5>
+    @foreach (var data in ViewData["data_text"] as IEnumerable<Tuple<List<string>, List<Newtonsoft.Json.Linq.JToken>>>)
+    {
+        <h5>@data</h5>
+    }
 </div>
