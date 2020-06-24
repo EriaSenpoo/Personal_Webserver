@@ -6,12 +6,12 @@ using System.Threading.Tasks;
 
 namespace Personal_Website.Models
 {
-    public class Om_mig_text_object
+    public class Data_text_object
     {
         public string subject { get; set; }
         public JToken text { get; set; }
 
-        public Om_mig_text_object(string subject, JToken text)
+        public Data_text_object(string subject, JToken text)
         {
             this.subject = subject;
             this.text = text;

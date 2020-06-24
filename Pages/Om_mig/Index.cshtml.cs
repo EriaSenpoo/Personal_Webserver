@@ -16,7 +16,7 @@ namespace Personal_Website.Pages.Om_mig
     {
         private readonly ILogger<IndexModel> _logger;
 
-        public List<Om_mig_text_object> list = new List<Om_mig_text_object>();
+        public List<Data_text_object> list = new List<Data_text_object>();
 
         public string banner { get; set; }
         public string Index_title { get; private set; }
