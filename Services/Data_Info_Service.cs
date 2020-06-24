@@ -47,7 +47,10 @@ namespace Personal_Website.Services
             List<string> subject = om_mig_info.Properties().Select(property => property.Name).ToList();
             List<JToken> text = om_mig_info.Properties().Select(property => property.Value).ToList();
             List<Om_mig_text_object> om_mig_data = new List<Om_mig_text_object>();
-            om_mig_data.Add(new Om_mig_text_object(subject, text));
+            for (int i = 0; i < subject.Count; i++)
+            {
+                om_mig_data.Add(new Om_mig_text_object(subject[i], text[i]));
+            }
             return om_mig_data;
         }
     }

@@ -8,19 +8,19 @@ namespace Personal_Website.Models
 {
     public class Om_mig_text_object
     {
-        public List<string> subjects { get; set; }
-        public List<JToken> text { get; set; }
+        public string subject { get; set; }
+        public JToken text { get; set; }
 
-        public Om_mig_text_object(List<string> subjects, List<JToken> text)
+        public Om_mig_text_object(string subject, JToken text)
         {
-            this.subjects = subjects;
+            this.subject = subject;
             this.text = text;
         }
 
         public override string ToString()
         {
-            //return string.Format("{0}", "{1}", subjects, text);
-            return $"{subjects}, {text}";
+            //return string.Format("{0}", "{1}", subject, text);
+            return $"{subject}, {text}";
         }
     }
 }

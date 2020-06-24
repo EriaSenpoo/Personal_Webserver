@@ -1,18 +1,18 @@
 {
   "om_mig_info": {
-    "introduktion": "a0",
-    "et_eller_andet": "b0",
-    "et_eller_andet_tredje": "c0"
+    "introduktion": "om_mig_text1",
+    "et_eller_andet": "om_mig_text2",
+    "et_eller_andet_tredje": "om_mig_text3"
   },
   "projekter": {
-    "introduktion1": "a1",
-    "et_eller_andet1": "b1"
+    "introduktion1": "projekter_text1",
+    "et_eller_andet1": "projekter_text2"
   },
   "fritid": {
-    "introduktion2": "a2",
-    "et_eller_andet2": "b2"
+    "introduktion2": "fritid_text1",
+    "et_eller_andet2": "fritid_text2"
   },
   "kontakt": {
-    "introduktion3": "a3"
+    "introduktion3": "kontakt_text1"
   }
 }

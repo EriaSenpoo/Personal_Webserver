@@ -16,12 +16,11 @@ namespace Personal_Website.Pages.Om_mig
     {
         private readonly ILogger<IndexModel> _logger;
 
+        public List<Om_mig_text_object> list = new List<Om_mig_text_object>();
 
         public string banner { get; set; }
         public string Index_title { get; private set; }
         public Data_Info_Service Om_mig_service_text { get; set; }
-        //public Tuple<List<string>, List<JToken>> Tuuple { get; set; }
-        //public List<Tuple<List<string>, List<JToken>>> tuple_list { get; set; }
 
         public IndexModel(ILogger<IndexModel> logger, Data_Info_Service Om_mig_service_text)
         {
@@ -33,28 +32,7 @@ namespace Personal_Website.Pages.Om_mig
         {
             banner = Url.Content("~/images/om_mig_banner.png");
             ViewData["Banner"] = banner;
-            var source = Om_mig_service_text.get_data_om_mig_info_data();
-            foreach (var aaa in source)
-            {
-                ViewData["data"] = string.Join(" ", aaa.subjects); // NEED TO RETURN BOTH
-            }
-
-            //ViewData["data_text"] = a;
-            //ViewData["data_text"] = string.Join(",", a.text);
-
-            //ViewData["data"] = source;
-            ////ViewData["data_text"] = a;
-            //ViewData["data"] = string.Join(" ", source);
-            ////ViewData["data_text"] = string.Join(",", a.text);
-
-            //Tuuple = Om_mig_service_text.get_data_om_mig_info_data();
-            ////ViewData["data_text"] = Tuuple;
-            ////aaa = Tuuple;
-            //tuple_list = new List<Tuple<List<string>, List<JToken>>>();
-            //tuple_list.Add(Tuuple);
-            //ViewData["data_text"] = tuple_list;
-            //aaa = ViewData["data_text"];
-            //Index_title = "Om mig";
+            list = Om_mig_service_text.get_data_om_mig_info_data();
         }
     }
 }
