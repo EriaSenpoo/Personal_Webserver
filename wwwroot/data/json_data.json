@@ -10,7 +10,8 @@
   },
   "fritid": {
     "introduktion2": "fritid_text1",
-    "et_eller_andet2": "fritid_text2"
+    "et_eller_andet2": "fritid_text2",
+    "et_eller_andet_tredje": "fritid_text3"
   },
   "kontakt": {
     "introduktion3": "kontakt_text1",
