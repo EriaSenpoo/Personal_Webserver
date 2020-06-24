@@ -25,6 +25,7 @@ namespace Personal_Website
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddMvc().AddRazorPagesOptions(options => options.Conventions.AddPageRoute("/Om_mig/Index", ""));
             services.AddTransient<Data_Info_Service>();
         }
 

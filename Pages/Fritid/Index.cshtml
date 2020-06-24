@@ -15,7 +15,14 @@
 <div class="data_position_title">
     <h1>Fritid</h1>
 </div>
+
 <div class="data_position">
-    <h5>@Model.Fritid_text</h5>
+    @foreach (Personal_Website.Models.Data_text_object data in Model.list)
+    {
+        <div>
+            <div>@data.subject</div>
+            <div>@data.text</div>
+        </div>
+    }
 </div>
 

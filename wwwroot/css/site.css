@@ -133,3 +133,7 @@ body {
 .sub_buttons_ind:hover {
     background-color: #1e1e1e;
 }
+
+.subjects_font{
+    font-size: 30px;
+}

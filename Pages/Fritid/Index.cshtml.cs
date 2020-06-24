@@ -13,20 +13,19 @@ namespace Personal_Website.Pages.Fritid
 {
     public class IndexModel : PageModel
     {
-        private readonly ILogger<IndexModel> _logger;
-        public Data_Info_Service data_info;
+        public List<Data_text_object> list = new List<Data_text_object>();
+        public Data_Info_Service Service_text;
         // They called ```public IEnumerable<Product> Products;```
 
         public string Fritid_text { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, Data_Info_Service data_info)
+        public IndexModel(Data_Info_Service Service_text)
         {
-            _logger = logger;
-            this.data_info = data_info;
+            this.Service_text = Service_text;
         }
         public void OnGet()
         {
-            Fritid_text = "insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here insert data here ";
+            list = Service_text.get_fritid_data();
         }
     }
 }

@@ -20,19 +20,20 @@ namespace Personal_Website.Pages.Om_mig
 
         public string banner { get; set; }
         public string Index_title { get; private set; }
-        public Data_Info_Service Om_mig_service_text { get; set; }
+        public Data_Info_Service Service_text { get; set; }
 
-        public IndexModel(ILogger<IndexModel> logger, Data_Info_Service Om_mig_service_text)
+        public IndexModel(ILogger<IndexModel> logger, Data_Info_Service Service_text)
         {
             _logger = logger;
-            this.Om_mig_service_text = Om_mig_service_text;
+            this.Service_text = Service_text;
         }
 
         public void OnGet()
         {
+            Index_title = "Om mig";
             banner = Url.Content("~/images/om_mig_banner.png");
             ViewData["Banner"] = banner;
-            list = Om_mig_service_text.get_data_om_mig_info_data();
+            list = Service_text.get_om_mig_data();
         }
     }
 }

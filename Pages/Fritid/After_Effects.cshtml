@@ -13,6 +13,13 @@
 <div class="data_position_title">
     <h1>After Effects</h1>
 </div>
+
 <div class="data_position">
-    <h5>@Model.After_Effects_text</h5>
+    @foreach (Personal_Website.Models.Data_text_object data in Model.list)
+    {
+        <div>
+            <div class="subjects_font">@data.subject</div>
+            <div>@data.text</div>
+        </div>
+    }
 </div>
