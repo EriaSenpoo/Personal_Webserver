@@ -1,21 +1,21 @@
 {
   "om_mig_info": {
-    "introduktion": "om_mig_text1",
-    "et_eller_andet": "om_mig_text2",
-    "et_eller_andet_tredje": "om_mig_text3"
+    "om_mig_introduktion": "om_mig_text1",
+    "om_mig_et_eller_andet": "om_mig_text2",
+    "om_mig_et_eller_andet_tredje": "om_mig_text3"
   },
   "projekter": {
-    "introduktion1": "projekter_text1",
-    "et_eller_andet1": "projekter_text2"
+    "projekter_introduktion": "projekter_text1",
+    "projekter_et_eller_andet": "projekter_text2"
   },
   "fritid": {
-    "introduktion2": "fritid_text1",
-    "et_eller_andet2": "fritid_text2",
-    "et_eller_andet_tredje": "fritid_text3",
-    "et_eller_andet_fjerde": "fritid_text4"
+    "fritid_introduktion": "fritid_text1",
+    "fritid_et_eller_andet": "fritid_text2",
+    "fritid_et_eller_andet_tredje": "fritid_text3",
+    "fritid_et_eller_andet_fjerde": "fritid_text4"
   },
   "kontakt": {
-    "introduktion3": "kontakt_text1",
-    "yderligere_information": "kontakt_text2"
+    "kontakt_introduktion3": "kontakt_text1",
+    "kontakt_yderligere_information": "kontakt_text2"
   }
 }
