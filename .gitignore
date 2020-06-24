@@ -2,4 +2,4 @@ bin
 obj
 Properties
 json_data.json
-Personal_Website/wwwroot/data/json_data.json
+wwwroot/data/json_data.json
