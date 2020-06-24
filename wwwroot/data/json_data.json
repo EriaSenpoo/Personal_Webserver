@@ -13,6 +13,7 @@
     "et_eller_andet2": "fritid_text2"
   },
   "kontakt": {
-    "introduktion3": "kontakt_text1"
+    "introduktion3": "kontakt_text1",
+    "yderligere_information": "kontakt_text2"
   }
 }
