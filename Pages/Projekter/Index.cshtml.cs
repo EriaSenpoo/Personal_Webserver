@@ -27,7 +27,7 @@ namespace Personal_Website.Pages.Projekter
         {
             banner = Url.Content("~/images/projekter_banner.png");
             ViewData["Banner"] = banner;
-            list = Service_text.get_projekter_data();
+            list = Service_text.get_data("projekter");
         }
     }
 }

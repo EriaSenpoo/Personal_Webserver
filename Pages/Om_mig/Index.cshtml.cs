@@ -33,7 +33,7 @@ namespace Personal_Website.Pages.Om_mig
             Index_title = "Om mig";
             banner = Url.Content("~/images/om_mig_banner.png");
             ViewData["Banner"] = banner;
-            list = Service_text.get_om_mig_data();
+            list = Service_text.get_data("om_mig");
         }
     }
 }

@@ -26,7 +26,7 @@ namespace Personal_Website.Pages.Fritid
             banner = Url.Content("~/images/godot_banner.png");
             ViewData["Banner"] = banner;
             Godot_title = "Godot";
-            list = Service_text.get_godot_data();
+            list = Service_text.get_data("godot");
         }
     }
 }

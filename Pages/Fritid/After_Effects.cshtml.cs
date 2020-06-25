@@ -25,7 +25,7 @@ namespace Personal_Website.Pages.Fritid
         {
             banner = Url.Content("~/images/after_effects_banner.png");
             ViewData["Banner"] = banner;
-            list = Service_text.get_after_effects_data();
+            list = Service_text.get_data("after_effects");
         }
     }
 }

@@ -13,6 +13,7 @@ namespace Personal_Website.Pages.Kontakt
     {
         public List<Data_text_object> list = new List<Data_text_object>();
         public Data_Info_Service Service_text { get; set; }
+        public string banner { get; set; }
         public string Title_text { get; set; }
 
         public IndexModel(Data_Info_Service Service_text)
@@ -22,8 +23,10 @@ namespace Personal_Website.Pages.Kontakt
 
         public void OnGet()
         {
+            banner = Url.Content("~/images/contact_banner.png");
+            ViewData["Banner"] = banner;
             Title_text = "Kontakt";
-            list = Service_text.get_kontakt_data();
+            list = Service_text.get_data("kontakt");
         }
     }
 }

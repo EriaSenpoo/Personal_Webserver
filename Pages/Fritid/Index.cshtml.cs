@@ -15,8 +15,7 @@ namespace Personal_Website.Pages.Fritid
     {
         public List<Data_text_object> list = new List<Data_text_object>();
         public Data_Info_Service Service_text;
-        // They called ```public IEnumerable<Product> Products;```
-
+        public string banner { get; set; }
         public string Fritid_text { get; set; }
 
         public IndexModel(Data_Info_Service Service_text)
@@ -25,7 +24,9 @@ namespace Personal_Website.Pages.Fritid
         }
         public void OnGet()
         {
-            list = Service_text.get_fritid_data();
+            banner = Url.Content("~/images/fritid_banner.png");
+            ViewData["Banner"] = banner;
+            list = Service_text.get_data("fritid");
         }
     }
 }

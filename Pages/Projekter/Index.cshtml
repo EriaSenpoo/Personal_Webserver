@@ -7,10 +7,6 @@
 
 <img class="banner_position" src='@ViewData["Banner"]' alt="ViewData[Banner] "/>
 
-<div class="sub_buttons_specs">
-    <a type="button" class="btn btn-outline-success sub_buttons_ind" style="color: #7d7d7d; border-color: #7d7d7d;" asp-area="" asp-page="/Om_mig/Index">Return</a>
-</div>
-
 <div class="data_position_title">
     <h1>Projekter</h1>
 </div>
@@ -19,7 +15,7 @@
     @foreach (Personal_Website.Models.Data_text_object data in Model.list)
     {
         <div>
-            <div>@data.subject</div>
+            <div class="subjects_font">@data.subject</div>
             <div>@data.text</div>
         </div>
     }

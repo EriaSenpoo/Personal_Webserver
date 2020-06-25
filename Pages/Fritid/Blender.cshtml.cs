@@ -25,7 +25,7 @@ namespace Personal_Website.Pages.Fritid
         {
             banner = Url.Content("~/images/blender_banner.png");
             ViewData["Banner"] = banner;
-            list = Service_text.get_blender_data();
+            list = Service_text.get_data("blender");
         }
     }
 }

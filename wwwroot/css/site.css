@@ -61,6 +61,7 @@ html {
 body {
   /* Margin bottom by footer height */
   margin-bottom: 60px;
+  overflow-y: auto;
 }
 .footer {
   position: absolute;
@@ -92,9 +93,9 @@ body {
 }
 
 .layout_buttons {
-    height: 130px;
+    height: 156.7px;
     border: 2px solid white;
-    padding: 8%;
+    padding: 10%;
     font-size: 250%;
     color: #ffffff;
 }
@@ -135,5 +136,5 @@ body {
 }
 
 .subjects_font{
-    font-size: 30px;
+    font-size: 26px;
 }
