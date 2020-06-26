@@ -1,20 +1,18 @@
 ﻿@page
-@model Personal_Website.Pages.Kontakt.IndexModel
+@model Personal_Website.Pages.Projekter.Hjemmelavede_projekterModel
 @{
-    ViewData["Title"] = "Index";
+    ViewData["Title"] = "Hjemmelavede_projekter";
 }
 
-<img class="banner_position" src='@ViewData["Banner"]' alt="ViewData[Banner]" />
-
 <div class="data_position_title">
-    <h1>Kontakt</h1>
+    <h1>Hjemmelavede Projekter</h1>
 </div>
 
 <div class="data_position pre-scrollable-custom">
     @foreach (Personal_Website.Models.Data_text_object data in Model.list)
     {
         <div>
-            <div>@data.subject</div>
+            <div class="subjects_font">@data.subject</div>
             <div>@data.text</div>
         </div>
     }
